@@ -82,7 +82,7 @@
 
 import React, { useState } from 'react';
 import './App.css';
-import video from './assets/video.mp4';
+// import video from './assets/video.mp4';
 
 function App() {
   const [modal, setModal] = useState(null);
@@ -168,7 +168,9 @@ function App() {
       {/* Video Button */}
       <div className="btn">
         <button>
-          <a href={video}>{content[language].button}</a>
+          {/* <a href={video}>{content[language].button}</a> */}
+          {/* unncomment above once animation added */}
+          <a>{content[language].button}</a>
         </button>
       </div>
     </div>
