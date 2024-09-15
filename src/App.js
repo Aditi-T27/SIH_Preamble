@@ -82,7 +82,7 @@
 
 import React, { useState } from 'react';
 import './App.css';
-import video from './assets/video.mp4';
+// import video from './assets/video.mp4';
 
 function App() {
   const [modal, setModal] = useState(null);
@@ -168,7 +168,10 @@ function App() {
       {/* Video Button */}
       <div className="btn">
         <button>
-          <a href={video}>{content[language].button}</a>
+          {/* {/* /* <a href={video}>{content[language].button}</a> */ }
+          {/* Add video here,after adding it into assets folder inside my-react-app */}
+          <a>{content[language].button}</a>
+          {/* comment this a once exexute above one */}
         </button>
       </div>
     </div>
